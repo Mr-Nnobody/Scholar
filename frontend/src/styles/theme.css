@@ -1,6 +1,6 @@
 /* === Theme Variables === */
 :root {
-  /* 🎨 Primary Colors */
+  /*  Primary Colors */
 
   --color-primary: #202142;     /* Use for headers, navigation bars, buttons, and footer backgrounds */
   --color-accent: #51EAEA;      /* Use for links, hover effects, icons, and highlight elements */
@@ -9,26 +9,26 @@
   --color-light: #FFFFFF;       /* Use for main content backgrounds, text containers, and clean areas */
   --color-muted: #F3F4F6;       /* Use for subtle backgrounds, form inputs, and secondary sections */
 
-  /* ✍️ Typography */
+  /* Typography */
 
   --font-main: 'Segoe UI', sans-serif;  /* Use as the default font for all text */
   --font-size-base: 16px;               /* Use for body text and paragraph content */
   --font-size-heading: 2rem;            /* Use for main headings (h1, h2) */
   --font-size-subheading: 1.25rem;      /* Use for subheadings, section titles */
 
-  /* 📐 Spacing */
+  /* Spacing */
 
   --spacing-sm: 0.5rem;   /* Use for tight padding/margins (e.g., inside buttons or cards) */
   --spacing-md: 1rem;     /* Use for standard padding/margins (e.g., between sections or elements) */
   --spacing-lg: 2rem;     /* Use for large spacing (e.g., page layout, hero sections) */
 
-  /* 🟦 Border Radius */
+  /* Border Radius */
 
   --radius-sm: 4px;       /* Use for buttons, input fields, and small UI elements */
   --radius-md: 8px;       /* Use for cards, modals, and containers */
   --radius-lg: 12px;      /* Use for large banners, hero sections, or rounded layouts */
 
-  /* 🌫️ Shadows */
+  /* Shadows */
 
   --shadow-soft: 0 2px 8px rgba(32, 33, 66, 0.1);  /* Use for cards, dropdowns, and elevated elements */
 }
