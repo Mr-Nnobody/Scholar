@@ -2,11 +2,12 @@ import React from "react";
 
 export default function SignUp() {
   return (
-    <div class="bg-white-100 w-80vw">
+    <div class="bg-gray-100 w-2/5 mx-auto p-10" >
       <p>
-        Register to get your dream <span class="text-red-400">Scholarship</span>
+        Register to get started with your dream{" "}
+        <span class="text-red-400">Scholarship</span>
       </p>
-      <div>
+      <div class="flex flex-col w-3/5 mx-auto">
         <input type="text" placeholder="Name..." />
         <input type="email" placeholder="Email..." />
         <input type="password" placeholder="Password..." />
