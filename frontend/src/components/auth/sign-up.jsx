@@ -1,10 +1,19 @@
-import React from "react";
+
+import React, { useState }  from "react";
 
 export default function SignUp() {
 
-// const handleSubmit = onclick{
+const [name, setName] = useState('')
+const [email, setEmail] = useState('')
+const [password, setPassword] = useState('')
 
-// }
+const handleSubmit =  (e) => {
+  e.preventDefault()
+
+  console.log(`userName: ${name} email: ${email} password: ${password}`)
+// API call to backend 
+  
+}
 
   return (
     <div class="flex justify-center items-center h-screen">
@@ -18,28 +27,41 @@ export default function SignUp() {
           <input
             class="my-2 p-2 rounded focus:outline-none focus:ring-sky-200 focus:ring-2 pl-4 text-lg"
             type="text"
+            name="userName"
+            value={name}
+            onChange={(e)=> {setName(e.target.value)}}
+            required
             placeholder="Enter Your Name"
           />
           <input
             class="my-2 p-2 rounded focus:outline-none focus:ring-sky-200 focus:ring-2 pl-4 text-lg"
             type="email"
+            name="userEmail"
+            autoComplete="email"
+            value={email}
+            onChange={(e) => {setEmail(e.target.value)}}
+            required
             placeholder="Enter YourEmail"
-          />
+            />
           <input
             class="my-2 p-2 rounded focus:outline-none focus:ring-sky-200 focus:ring-2 pl-4 text-lg"
             type="password"
+            name="password"
+            minLength={8}
+            value={password}
+            onChange={(e) => {setPassword(e.target.value)}}
+            required
             placeholder=" Enter Your Password"
-          />
+          /> 
           <input
             class="my-2 p-2 rounded focus:outline-none focus:ring-sky-200 focus:ring-2 pl-4 text-lg"
             type="password"
+            required
             placeholder="Confirm Password"
-          /> <div class="flex w-full mx-auto my-8 justify-between px-4 text-xl ">
-          <button type="button" class="px-4 py-1 rounded bg-yellow-300">
-            Cancel
-          </button>
-          <button type="submit" class="bg-green-400 rounded px-4 py-1">
-            Submit
+          /> <div class=" w-full  my-8  px-4 text-xl ">
+          
+          <button type="submit" class="bg-green-400 rounded px-4 py-1" onClick={handleSubmit}>
+            Register Now
           </button>
         </div>
         </ form>
