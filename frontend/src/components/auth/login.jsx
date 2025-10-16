@@ -1,6 +1,10 @@
 import React from "react";
 
+
 export default function Login() {
+
+
+
   return (
     <div class="flex justify-center items-center h-screen">
       <div class="bg-gray-100 w-2/6  rounded p-10">
@@ -9,12 +13,20 @@ export default function Login() {
           <span class="text-red-500 font-bold"> Scholarship</span>
         </p>
         <form class="flex flex-col w-5/6 mx-auto  ">
+      
           <input
+            name="userName"
+            type="text"
+            required
+            autoComplete="userName"
             class="my-2 p-2 rounded focus:outline-none focus:ring-sky-200 focus:ring-2 pl-4 text-lg"
             placeholder="Enter Your Name"
           />
-        
+
           <input
+            type="password"
+            name="password"
+            required
             class="my-2 p-2 rounded focus:outline-none focus:ring-sky-200 focus:ring-2 pl-4 text-lg"
             placeholder=" Enter Your Password"
           />
